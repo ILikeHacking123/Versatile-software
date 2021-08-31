@@ -6,11 +6,11 @@ title Batch all in 1 by tuanminh
 echo What are you want to do?
 echo 1-calculator
 echo 2-i am bored
-echo 3-exit
+echo 3-time now
 set /p here="Your choice:"
 if %here%==1 goto calc
 if %here%==2 goto bored
-if %here%==3 exit
+if %here%==3 goto time
 :calc
 cls
 title Calculator
@@ -43,3 +43,5 @@ echo Good lucky, and now back to menu!
 pause
 cls
 goto main
+:TIME
+echo Now is %time%, %date%
