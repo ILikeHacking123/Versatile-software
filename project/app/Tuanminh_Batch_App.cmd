@@ -7,10 +7,12 @@ echo What are you want to do?
 echo 1-calculator
 echo 2-i am bored
 echo 3-time now
+echo 4-github
 set /p here="Your choice:"
 if %here%==1 goto calc
 if %here%==2 goto bored
 if %here%==3 goto time
+if %here%==4 start https://github.com/TuanminhDev/Versatile-software
 :calc
 cls
 title Calculator
