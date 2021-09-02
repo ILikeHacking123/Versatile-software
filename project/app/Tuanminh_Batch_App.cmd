@@ -1,7 +1,7 @@
 @cls
-@color 97
 @echo off
 :main
+color 97
 title Batch all in 1 by tuanminh
 echo What are you want to do?
 echo 1-calculator
@@ -12,7 +12,12 @@ set /p here="Your choice:"
 if %here%==1 goto calc
 if %here%==2 goto bored
 if %here%==3 goto time
-if %here%==4 start https://github.com/TuanminhDev/Versatile-software
+if %here%==4 (
+  start https://github.com/TuanminhDev/Versatile-software
+  TIMEOUT /T 20
+  cls
+  goto main
+)
 :calc
 cls
 title Calculator
